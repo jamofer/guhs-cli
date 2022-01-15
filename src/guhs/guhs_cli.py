@@ -1,4 +1,5 @@
 import sys
+from typing import List
 
 from guhs import logger
 from guhs import guhs_configurator
@@ -54,7 +55,7 @@ def ls():
     return boot_targets
 
 
-def _format_boot_targets(targets: list[Target]):
+def _format_boot_targets(targets: List[Target]):
     return '\n'.join(f'{_format_boot_target(t)}' for t in targets)
 
 

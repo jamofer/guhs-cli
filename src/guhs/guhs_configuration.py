@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from enum import Enum
-from typing import Optional
+from typing import Optional, List
 
 
 @dataclass
@@ -12,7 +12,7 @@ class Target(object):
 @dataclass
 class GuhsConfiguration(object):
     installed: bool
-    targets: list[Target]
+    targets: List[Target]
     server: Optional[str] = None
     boot_selection_timeout: Optional[int] = None
     default_target: Optional[Target] = None
