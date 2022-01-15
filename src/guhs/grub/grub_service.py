@@ -54,4 +54,5 @@ def read_script(filename):
     return shell.read_file(f'{GRUB_CONFIG_FOLDER}/{filename}')
 
 
-class GrubServiceError(RuntimeError): pass
+class GrubServiceError(RuntimeError):
+    pass

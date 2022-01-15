@@ -25,4 +25,3 @@ class GuhsParameters(str, Enum):
     @classmethod
     def list(cls):
         return list(map(lambda parameter: parameter.value, cls))
-
